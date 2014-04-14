@@ -67,12 +67,17 @@ li:active {
 
 .d-side-pane .d-list-item {
 	background-color: #404040;
+	border-bottom: inherit;
 }
 .d-side-pane .d-list-item-label {
 	color: white;
 }
 
 .d-button {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	background: none;
 	background-color: inherit;
 	border-style: none;
 	font-size:1.5em;
@@ -81,6 +86,10 @@ li:active {
 }
 
 .d-button:hover {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
+	background: none;
 	background-color: inherit;
 	border-style: none;
 	font-size:1.5em;
@@ -89,7 +98,11 @@ li:active {
 }
 
 .d-button:focus {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	border-radius: 0;
 	background-color: inherit;
+	background: none;
 	border-style: none;
 	font-size:1.5em;
 	color: white;
