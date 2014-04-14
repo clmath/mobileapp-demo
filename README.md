@@ -1,6 +1,6 @@
-# mobileapp-demo
+# Multichannel Web App Demo
 
-This project provides a very simple demo of a multichannel application which is built using the following standards:
+This project provides a very simple demo of a multichannel web application which is built using the following standards:
 
 - W3C HTML5
 - W3C Web Components 
