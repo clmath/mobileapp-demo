@@ -10,24 +10,12 @@ This project provides a very simple demo of a multichannel application which is 
 - Promises/A+ 
 - Bind
 
-## Dependencies
-This application uses the standard deliteful components library and requireJS for AMD loader, but you can easily add other web components such as Polymer's.  
+## Install
 
-## Issues
-
-Bugs and open issues are tracked in the
-[github issues tracker](https://github.com/ibm-js/mobileapp-demo/issues).
-
-## Licensing
-
-This project is distributed by the Dojo Foundation and licensed under the ["New" BSD License](https://github.com/dojo/dojo/blob/master/LICENSE#L13-L41).
-All contributions require a [Dojo Foundation CLA](http://dojofoundation.org/about/claForm).
-
-## Installation
-
-_Bower_ Installation couldn't get any simpler!
+Installation couldn't get any simpler:
 
     $ git clone https://github.com/ccmitchellusa/mobileapp-demo.git
+    $ cd mobileapp-demo
     $ bower install
 
 ## Run
@@ -35,3 +23,12 @@ _Bower_ Installation couldn't get any simpler!
 Run the demo in your browser (replacing WEB_ROOT with your local web root):
 
     http://{WEB_ROOT}/mobileapp-demo
+
+## Dependencies
+This application uses the standard deliteful components library and requireJS for AMD loader, but you can easily add other web components such as Polymer's.  
+
+## Licensing
+
+This project is distributed by the Dojo Foundation and licensed under the ["New" BSD License](https://github.com/dojo/dojo/blob/master/LICENSE#L13-L41).
+All contributions require a [Dojo Foundation CLA](http://dojofoundation.org/about/claForm).
+
