@@ -5,7 +5,7 @@
 	<meta name="viewport"
 		  content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no"/>
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
-	<title>Mobile Application</title>
+	<title>Multichannel Application Demo</title>
 
 	<link rel="stylesheet" href="bower_components/delite/themes/defaultapp.css">
 	<link rel="stylesheet" href="app.css">
@@ -28,8 +28,8 @@
 			for (var i = 1; i < 100; i++){
 				list.store.add({label: "Item #" + i});
 			}
-			menulist.store.add({label: "List A", target:"aaa"});
-			menulist.store.add({label: "List B", target:"bbb"});
+			menulist.store.add({label: "NEWS", target:"aaa"});
+			menulist.store.add({label: "SPORTS", target:"bbb"});
 			var actionHandler = function(event, list) {
 				var renderer = list.getEnclosingRenderer(event.target);
 				vs.show(renderer.item.target, {transition: "fade"});
@@ -45,13 +45,13 @@
 <!-- A SidePane for the left menu -->
 <d-side-pane mode="push" position="start" id="leftPane">
 	<d-linear-layout class="height100">
-		<d-linear-layout vertical="false" class="pageHeader">
-			<div><button is="d-button" onclick="leftPane.close()"></button></div>
-			<div class="fill titleStyle">Menu</div>
-			<div><button is="d-button" onclick="leftStack.show(settings)"></button></div>
+		<d-linear-layout style="background-color: #303030;" vertical="false" class="pageHeader">
+			<div><button is="d-button" style="background-color: inherit; border-style: none; font-size:1.25em; color: #808080; padding: 0px;"  onclick="leftPane.close()">&#9660;</button></div>
+			<div class="fill titleStyle">Lists</div>
+			<div style="width: 2em;"></div>
 		</d-linear-layout>
 
-		<d-view-stack id="leftStack" class="width100 fill" style="background-color: white">
+		<d-view-stack id="leftStack" class="width100 fill" style="background-color: #303030;">
 			<div style="height: 100%" id="menu">
 				<d-list style="height: 100%" id="menulist" targetAttr="target"></d-list>
 			</div>
@@ -59,6 +59,8 @@
 				<button is="d-button" onclick="leftStack.show(menu, {reverse:true})"></button>
 			</div>
 		</d-view-stack>
+
+		<div style="padding-left:.5em; background-color: #303030; font-size:2em; color: #808080;">&#9881;</div>
 	</d-linear-layout>
 </d-side-pane>
 
@@ -66,9 +68,9 @@
 <d-linear-layout class=" width100 height100 page">
 	<!-- Header -->
 	<d-linear-layout vertical="false" class="pageHeader">
-		<div><button is="d-button" onclick="leftPane.open()"></button></div>
-		<div class="fill titleStyle">Deliteful Mobile App</div>
-		<div><button is="d-button"></button></div>
+		<div><button is="d-button" onclick="leftPane.open()">&#9776;</button></div>
+		<div class="fill titleStyle">My App</div>
+		<div><button is="d-button" >&#9532;</button></div>
 	</d-linear-layout>
 	<!-- Main content (ViewStack) -->
 	<d-view-stack is="d-view-stack" id="vs" class="width100 fill">
