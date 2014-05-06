@@ -14,7 +14,7 @@ This project provides a very simple demo of a multichannel web application which
 
 Installation couldn't get any simpler:
 
-    $ git clone https://github.com/ccmitchellusa/mobileapp-demo.git
+    $ git clone https://github.com/clmath/mobileapp-demo.git
     $ cd mobileapp-demo
     $ bower install
 

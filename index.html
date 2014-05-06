@@ -7,14 +7,33 @@
 	<meta name="apple-mobile-web-app-capable" content="yes"/>
 	<title>Multichannel Application Demo</title>
 
-	<link rel="stylesheet" href="bower_components/delite/themes/defaultapp.css">
+	<link rel="stylesheet" href="bower_components/delite-build/themes/defaultapp.css">
 	<link rel="stylesheet" href="app.css">
 
 	<!-- For testing purposes.  Real applications should load the AMD loader directly -->
 	<script type="text/javascript" src="bower_components/requirejs/require.js"></script>
-
 	<script type="text/javascript">
-		require({baseUrl: "bower_components"},[
+		require.config({
+			baseUrl: "bower_components",
+			packages: [
+				{
+					name: "delite",
+					location: "delite-build"
+				}, {
+					name: "deliteful",
+					location: "deliteful-build"
+				
+				}, {
+					name: "dpointer",
+					location: "dpointer-build"
+				
+				}
+			]
+			})
+	</script>
+	<script type="text/javascript">
+	require(["delite/layer", "dpointer/layer", "deliteful/layer"], function(){
+		require([
 			"delite/register",
 //			"deliteful/ScrollableContainer",
 			"deliteful/ViewStack",
@@ -39,6 +58,8 @@
 				actionHandler(event, menulist);
 			});
 		});
+	
+	});	
 	</script>
 </head>
 <body>

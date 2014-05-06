@@ -1,14 +1,9 @@
 {
   "name": "mobileapp-demo",
   "version": "0.1.0",
-  "authors": [
-    "dmandrioli@gmail.com"
-  ],
   "description": "Very simple mobile app which uses deliteful web components",
-  "license": "MIT",
-  "private": true,
   "dependencies": {
-    "deliteful": "git://github.com/ibm-js/deliteful.git"
+    "deliteful-build": "git://github.com/clmath/deliteful-build.git"
   },
   "ignore": [
     "**/.*",
